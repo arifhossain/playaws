@@ -1,0 +1,32 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Resources:
+  cloudformationPolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      Description: This is a policy to allow read/write access on cloudformation
+      ManagedPolicyName: ArifCftFullAccess
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action: 
+              - cloudformation:CreateStack
+              - cloudformation:UpdateStack
+              - cloudformation:DeleteStack
+            Resource: arn:aws:cloudformation:*:*:stack/*/*
+  cloudformationRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: ArifCftRole
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action: sts:AssumeRole
+            Principal: 
+              AWS: 
+                - arn:aws:iam::395305622959:root
+      ManagedPolicyArns:
+        - arn:aws:iam::395305622959:policy/arif-lambda-polly-policy
+        - !Ref cloudformationPolicy
