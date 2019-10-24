@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+conn	../data-lake-formation/dataInserterion.py	/^    conn = pymysql.connect(host, user=user,port=port,$/;"	kind:variable	line:16
+dataInserterion.py	../data-lake-formation/dataInserterion.py	1;"	kind:file	line:1
+dbname	../data-lake-formation/dataInserterion.py	/^dbname="swacustomerdb"$/;"	kind:variable	line:11
+host	../data-lake-formation/dataInserterion.py	/^host="customerdb.cmfzhye7x7w4.us-east-2.rds.amazonaws.com"$/;"	kind:variable	line:9
+logger	../data-lake-formation/dataInserterion.py	/^logger = logging.getLogger()$/;"	kind:variable	line:6
+logging	../data-lake-formation/dataInserterion.py	/^import logging$/;"	kind:namespace	line:2
+password	../data-lake-formation/dataInserterion.py	/^password="bosstest1"$/;"	kind:variable	line:13
+port	../data-lake-formation/dataInserterion.py	/^port=3306$/;"	kind:variable	line:10
+pymysql	../data-lake-formation/dataInserterion.py	/^import pymysql$/;"	kind:namespace	line:3
+sys	../data-lake-formation/dataInserterion.py	/^import sys$/;"	kind:namespace	line:1
+user	../data-lake-formation/dataInserterion.py	/^user="admin"$/;"	kind:variable	line:12

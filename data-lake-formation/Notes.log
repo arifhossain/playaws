@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS tasks (
+    task_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    start_date VARCHAR(30),
+    due_date VARCHAR(30),
+    priority TINYINT NOT NULL,
+    description TEXT
+);

@@ -1,0 +1,30 @@
+[
+  {
+    "ParameterKey": "VpcId",
+    "ParameterValue": "vpc-0a9730913332f0edd"
+  }, 
+  {
+    "ParameterKey": "Subnets",
+    "ParameterValue": "subnet-0509495a4b7025a7a,subnet-0a9fba6e7ad2a660c"
+  }, 
+  {
+    "ParameterKey": "DBName",
+    "ParameterValue": "swaflightdata"
+  }, 
+  {
+    "ParameterKey": "DBUsername",
+    "ParameterValue": "admin"
+  }, 
+  {
+    "ParameterKey": "DBPassword",
+    "ParameterValue": "swa12345"
+  }, 
+  {
+    "ParameterKey": "DBClass",
+    "ParameterValue": "db.t2.micro"
+  },
+  {
+    "ParameterKey": "DBAllocatedStorage",
+    "ParameterValue": "5"
+  }
+]

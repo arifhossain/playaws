@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Sample s3 cloudformation for testing
+Resources:
+ s3Bucket:
+  Type: AWS::S3::Bucket
+  Properties: 
+    AccessControl: BucketOwnerFullControl
+    BucketName: arif-sample-s3-bucket
+    Tags:
+      - Key: purpose
+        Value: sa-certification
